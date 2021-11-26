@@ -2,6 +2,9 @@
 import {makeLandingPageEls} from './landingPage.js'
 import {makeMenuPageEls} from './menuPage.js'
 import {makeContactPageEls} from './contactPage.js'
+import './styles.css'
+import empireState from './images/empireState1.jpg';
+
 
 // The whole of this app's code is in the 
 // following init function (or at least 
@@ -17,12 +20,26 @@ const init = () => {
     let homeDiv = document.getElementById('homeDiv')
 
     // Now a variable for the hard-coded div (in the html doc)
-    // and give it class "contentDiv": 
+    // and give it class "contentDiv". This is the div to which 
+    // code will append elements dynamically as the user 
+    // clicks on a tab: 
     const contentDiv = document.getElementById('content')
     // Give the div a class that sets its size and position
     // so that it's big enough to have appended to it lots
     // of stuff:
     contentDiv.classList.add("contentDiv")
+
+// Now a div for the background. This will contain
+// the image of the Empire State building:
+const backgrDiv = document.createElement("div");
+backgrDiv.classList.add("skyscraperDivClass", "redBorder", "backgroundBlue")
+// Add the Emp St building image:
+const empStImg = new Image();
+empStImg.src = empireState;
+backgrDiv.appendChild(empStImg);
+document.body.appendChild(backgrDiv);
+
+
 
 // Now define the callbacks for the evet listeners 
 // for the clicks of the menu, contact and home

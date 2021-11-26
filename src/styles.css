@@ -13,8 +13,8 @@ This div is common to what shows when the user
 clicks any tab*/        
 .skyscraperDivClass{
     /*The url below is relative to the 
-    index.html file in drectory dist*/        
-    background-image: url("../src/images/empireState1.svg"); 
+    index.html file in directory dist*/        
+    background-image: url("../src/images/empireState1.jpg"); 
     position: absolute;
     top: 70px;
     left: 0px;
@@ -31,6 +31,8 @@ shown on startup and after clicking the Home tab  */
 for the restaurant name and the <p>
 for the text beneath it*/
 .bigTextDiv{
+    z-index: 5;
+
     position: absolute;
     left: 15px;
     top: 75px;
@@ -71,6 +73,7 @@ padding: 0px;
 
 /* The restaurant subheading div*/
 .smallTextDiv{
+    z-index: 6;
     position: absolute;
     left: 25px;
     top: 160px;
@@ -222,7 +225,7 @@ and width 300px, these characteristics described by a comon class.
 Then there are three classes, one for the position of each menu  */
 
 /* The style characteristics common 
-to each menu. Code also uses this 
+to each menu div. Code also uses this 
 style for the box containing the 
 contacts info */
 .menuDiv {
@@ -230,7 +233,7 @@ contacts info */
     border: 1px black double;    
     height: fit-content;
     width: 300px;
-    background-color: rgb(231, 231, 229);
+    background-color: rgb(150, 207, 207);
     border-radius: 6px 6px 6px 6px;
     box-shadow: 2px 2px 12px black;
          }

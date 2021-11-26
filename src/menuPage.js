@@ -31,6 +31,12 @@
 // 5) Append the menu divs to the 
 // content div (which code will pass in)
 
+// First import image files:
+import quail from './images/quail.jpg';
+import ostrich from './images/ostrich.jpg';
+import squid from './images/squid.jpg';
+
+
 function makeMenuPageEls(contentDiv){
     
 // 1)
@@ -46,6 +52,10 @@ shahMenuDiv.appendChild(shahMenuHeadP);
 shahMenuDiv.appendChild(shahMenuBodyP);
 const quailsImageDiv = document.createElement("div");
 quailsImageDiv.classList.add("foodImageDiv", "quail")
+// Add the food image:
+const quailImg = new Image();
+quailImg.src = quail;
+quailsImageDiv.appendChild(quailImg);
 shahMenuDiv.appendChild(quailsImageDiv);
 
 
@@ -57,13 +67,17 @@ margMenuHeadP.classList.add("menuHead")
 margMenuHeadP.innerHTML = "Princess Margaret's ruin -- $546"
 const margMenuBodyP = document.createElement("p");
 margMenuBodyP.classList.add("menuText")
-margMenuBodyP.innerHTML = "A meal heavy on alcohol. Starter: Baby ostrich steaks braised in whisky. Main course: Flame-grilled warthog fillet mignon with vodka sauce. Dessert: doughnuts and jam."
+margMenuBodyP.innerHTML = "A meal heavy on alcohol. Starter: Baby ostrich steaks braised in whisky. Main course: Flame-grilled warthog filet mignon with vodka sauce. Dessert: doughnuts and jam."
 margMenuDiv.appendChild(margMenuHeadP);
 margMenuDiv.appendChild(margMenuBodyP);
 const ostrichImageDiv = document.createElement("div");
 ostrichImageDiv.classList.add("foodImageDiv", "ostrich")
 margMenuDiv.appendChild(ostrichImageDiv);
-
+// Add the food image:
+const ostrichImg = new Image();
+ostrichImg.src = ostrich;
+ostrichImageDiv.appendChild(ostrichImg);
+margMenuDiv.appendChild(ostrichImageDiv);
 
 // 3)
 const empMenuDiv = document.createElement("div");
@@ -78,6 +92,11 @@ empMenuDiv.appendChild(empMenuHeadP);
 empMenuDiv.appendChild(empMenuBodyP);
 const squidImageDiv = document.createElement("div");
 squidImageDiv.classList.add("foodImageDiv", "squid")
+empMenuDiv.appendChild(squidImageDiv);
+// Add the food image:
+const squidImg = new Image();
+squidImg.src = squid;
+squidImageDiv.appendChild(squidImg);
 empMenuDiv.appendChild(squidImageDiv);
 
 // 4)

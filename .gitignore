@@ -1,0 +1,9 @@
+# Good webpage for how to include files/folders in the .gitIgnore file:
+# https://www.pluralsight.com/guides/how-to-use-gitignore-file
+
+# macOS File annoyingly created by the OS
+.DS_Store
+
+# The node modules folder
+node_modules/
+
