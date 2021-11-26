@@ -1,0 +1,346 @@
+/*The div that's hard-coded in the html doc*/
+.contentDiv{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000px;
+    height: 1000px;
+           }
+
+/*----------------------------------*/
+/*For the div contaning the skyscraper image:
+This div is common to what shows when the user 
+clicks any tab*/        
+.skyscraperDivClass{
+    /*The url below is relative to the 
+    index.html file in drectory dist*/        
+    background-image: url("../src/images/empireState1.svg"); 
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 1000px;
+    height: 1000px;
+                      }        
+ 
+/*----------------------------------*/
+
+/* Now styles for the elements that make what gets
+shown on startup and after clicking the Home tab  */
+
+/*First for the div containing the <p> 
+for the restaurant name and the <p>
+for the text beneath it*/
+.bigTextDiv{
+    position: absolute;
+    left: 15px;
+    top: 75px;
+    width: 620px;
+    height: 120px;
+
+    background-color: rgb(167, 241, 241);
+    opacity: 0.7;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* The restaurant name <p>*/
+.bigTextP{
+position: absolute;
+left: 10px;
+top: 2px;
+
+height: 74px;
+
+font-family: 'Poiret One';
+font-size: 72px;
+line-height: 73px;
+letter-spacing: 1px;
+color: rgb(223, 194, 194);
+
+text-shadow: 1px 1px 3px rgb(0, 0, 0);
+
+background-color: rgb(117, 111, 111);
+
+
+margin: 0px;
+padding: 0px;
+        }
+
+/* ----------------------------- */
+
+/* The restaurant subheading div*/
+.smallTextDiv{
+    position: absolute;
+    left: 25px;
+    top: 160px;
+
+    height: 30px;
+    width: 600px;
+
+    background-color: rgb(216, 204, 204);
+
+    opacity: 0.8;
+
+             }
+
+/* The restaurant subheading
+<p> */
+.smallTextP{
+    position: absolute;
+    left: 10px;
+    top: -7px;
+
+    font-family: 'Poiret One';
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: rgb(201, 119, 119);
+    
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+    margin: 0px;
+    padding: 0px;
+            }
+    
+
+/* ----------------------------- */
+
+/* The blurb div */
+.blurbDiv{
+    position: absolute;
+    left: 650px;
+    top: 80px;
+
+    height: fit-content;
+    width: 190px;
+
+    background-color: rgb(216, 204, 204);
+
+    z-index: 2;
+    opacity: 0.8;
+         }
+
+
+/* The blurb <p> */
+.blurbP{
+    position: absolute;
+    left: 10px;
+    top: -7px;
+
+    font-family: 'Poiret One';
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: rgb(61, 22, 22);
+    
+    margin: 0px;
+    padding: 0px;
+
+         }
+
+/* ----------------------------- */
+
+/* The menu tab div */
+.menuTabDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 560px;
+    top: 5px;
+    height: 64px;
+    width: 130px;
+    
+    border: 1px red solid;
+    z-index: 5;
+
+    opacity: 0.8;
+           }
+
+/* The contact tab div */
+.contactTabDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 700px;
+    top: 5px;
+    height: 64px;
+    width: 160px;
+    
+    border: 1px red solid;
+    z-index: 5;
+
+    opacity: 0.8;
+              }
+
+/* The home tab div */
+.homeTabDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 870px;
+    top: 5px;
+    height: 64px;
+    width: 120px;
+    
+    border: 1px red solid;
+    z-index: 5;
+
+    opacity: 0.8;
+              }
+
+
+/* The <p> for the menu tabs*/
+.tabP{
+    position: relative;
+    
+    font-family: 'Limelight';
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: rgb(61, 22, 22);
+    
+    margin: 0px;
+    padding: 0px;
+     }
+
+/* ----------------------------- */
+
+/* Now styles for the elements that make up what gets
+shown after clicking the Menu tab  */
+
+/* There are three menus, each a pale yellow div with border
+and width 300px, these characteristics described by a comon class.
+Then there are three classes, one for the position of each menu  */
+
+/* The style characteristics common 
+to each menu. Code also uses this 
+style for the box containing the 
+contacts info */
+.menuDiv {
+    z-index: 5;
+    border: 1px black double;    
+    height: fit-content;
+    width: 300px;
+    background-color: rgb(231, 231, 229);
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 2px 2px 12px black;
+         }
+
+/* Now the three styles for positioning the three menus*/
+.menuOnePos{
+position: absolute;
+top: 230px;
+left: 25px;
+           }
+
+.menuTwoPos{
+    position: absolute;
+    top: 360px;
+    left: 353px;
+           }
+
+.menuThreePos{
+    position: absolute;
+    top: 500px;
+left: 680px;
+             }
+
+/* The menu headings*/
+.menuHead {
+    position: relative;
+    left: 7px;
+    width: 285px;
+    font-family: 'Poiret One';
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: rgb(182, 72, 72);
+    
+    text-shadow: dimgray 1px 1px 3px;
+    margin: 0px;
+    padding: 0px;
+
+           }
+
+/* The menu main text*/
+.menuText {
+    position: relative;
+    left: 20px;
+    width: 250px;
+    font-family: 'Limelight';
+    font-size: 26px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    color: rgb(61, 22, 22);
+    
+    margin: 0px;
+    padding: 0px;
+
+           }
+
+/* ----------------------------- */
+/* The styles for the contact 
+box are as for the menu boxes except 
+for the position of the contact box: */
+
+.contactBoxPos{
+    position: absolute;
+    top: 355px;
+left: 355px;
+              }
+
+/* ----------------------------- */
+/* For the divs that contain the images 
+of the meals */
+
+.foodImageDiv{
+    position: relative;
+    left: 20px;
+    width: 250px;
+    height: 200px;
+
+    border: 2px double grey;
+
+}
+
+/* For the food images */
+
+.quail{
+    background-image: url("../src/images/quail.jpg"); 
+       }   
+
+.ostrich{
+    background-image: url("../src/images/ostrich.jpg"); 
+        }
+
+.squid{
+    background-image: url("../src/images/squid.jpg"); 
+      }
+
+
+
+
+/* ----------------------------- */
+/*Some general styles*/
+.backgroundBlue{
+background-color: rgb(153, 181, 233);
+
+               }
+
+.brownBorder{
+    border: 1px rgb(88, 49, 5) solid;
+        
+            }        
+
+.redBorder{
+border: 1px red solid;
+         }        
