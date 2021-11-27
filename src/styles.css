@@ -1,4 +1,27 @@
-/*The div that's hard-coded in the html doc*/
+/* sat27nov21
+NOTE: The following fonts don't work in Safari. I used a
+free website to convert ttf font files into woff files
+(specified below) but Safari still won't recognise them 
+and replaces them with other fonts! They work in other 
+browsers, though.
+*/
+
+/*  Font directives  */
+@font-face {
+      font-family: 'Limelight';
+      src: url('./fonts/Limelight-Regular.woff') format('woff'),
+           }
+
+@font-face {
+      font-family: 'Poiret One';
+      src: url('./fonts/PoiretOne-Regular.woff') format('woff'),
+           }
+
+/*  -----------------------------------  */
+
+/*The div that's hard-coded in the html doc.
+This is the div to which code dynamically appends
+or removes elements*/
 .contentDiv{
     position: absolute;
     top: 0px;
